@@ -5,6 +5,7 @@ Task Description:
 Develop a web page that serves as an individual's online profile. The provided design outlines
 the expected layout and elements for the webpage. Your objective is to transform the design
 into a functional and visually appealing web page.
+
 Design Overview:
 The design includes the following components and layout:
 Header:
