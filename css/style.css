@@ -79,9 +79,6 @@ section{
      color: #b2564a; 
 } 
 
-/* .heading span{
-    color: var(--Salmon);
-} */
 
 header{
     position: fixed;
@@ -242,17 +239,6 @@ header .navbar ul li a:hover{
     background-color: #555;
   }
 
-/* .about .row .counter .box span{
-    font-size: 3rem;
-    color: var(--Salmon);
-}
-
-.about .row .counter .box h3{
-    font-size: 2rem;
-    color: #fff;
-} */
-
-
 
 
 .education .row{
@@ -263,19 +249,6 @@ header .navbar ul li a:hover{
     margin: 20px;
 }
 
-
-/* .top {
-    position:fixed;
-    bottom: 7.5rem; right: 2rem;
-    z-index: 100;
-    display: none;
-}  */
-
-
-
-/* #ac1{
-    float: left;
-} */
 
 .achievement-section{
 
