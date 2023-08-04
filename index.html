@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang = "en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewpoint" content="width=device-width", initial-scale="1.0">
+        <title>Ushani Anuradha</title>
+
+        <!--font awesome cdn link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <!--Custom css file link-->
+        <link rel="stylesheet" href="css/style.css"> 
+    </head>
+
+
+
+    <body>
+
+        <!--header section starts--> 
+        <header>
+            <div class="user">
+                <img src="images/profile_pic.jpg" alt="">
+                <h3 class="name">Ushani Anuradha</h3>
+                <p class="post">Software Engineering <br> Undergraduate</p>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#education">Experiences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--header section ends-->
+
+
+        <div id="menu" class="fas fa-bars"></div>
+
+
+        <!-- home section starts -->
+        <section class="home" id="home">     
+            <h3>HI THERE!</h3>
+            <h1>I'm <span>Ushani Anuradha</span></h1>
+            <p> I'm an enthusiastic and driven software engineering undergraduate with a thirst for 
+                knowledge and a love for problem-solving. Currently pursuing my degree at Faculty of
+                Science,University of Kelaniya. I am passionate about exploring the world of technology 
+                and its endless possibilities.
+                I'm a young learner who is passionate about exploring new technologies and 
+                is committed to collaborating with teams that prioritize both technical and soft skills.</p>
+
+            <a href="#contact"><button class="btn"> Contact Me <i class="fas fa-user"></i></button></a>
+
+        </section>
+        <!-- home section ends -->
+
+
+        <!-- about section starts -->
+        <section class="about" id="about">
+            <h1 class="heading"><span>About</span> Me</h1>
+            <div class="row">
+                <div class="info">
+                    <h3><span>Name : </span> Maha Gamage Ushani Anuradha</h3>
+                    <h3><span>Post : </span> Undergraduate at University of Kelaniya</h3>
+                    <h3><span>Languages : </span> Sinhala, English </h3>
+                    <p>Throughout my academic journey, I have delved into various programming languages, 
+                        algorithms, and software development methodologies. I find great joy in turning 
+                        complex challenges into beautiful and efficient solutions through coding projects, 
+                        coursework, or hackathons.</p>
+                </div>
+
+                <div class="counter">
+
+                    <div class="box">
+                        <a href="https://github.com/MGU-Anuradha" target="_blank" class="media-button">
+                            <i class="fa-brands fa-github"></i> <br>GitHub 
+                      </a>
+                    </div>
+
+                    <div class="box">
+                        <a href="https://www.linkedin.com/in/ushani-anuradha-3b0658217/" target="_blank" class="media-button">
+                            <i class="fa-brands fa-linkedin-in"></i> <br>LinkedIn 
+                      </a>
+                    </div>
+
+                    <div class="box">
+                        <a href="https://medium.com/@mguanuradha" target="_blank" class="media-button">
+                            <i class="fab fa-medium"></i>  <br> Medium 
+                      </a>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </section>
+        <!-- about section ends -->
+
+
+        <!--education section starts-->
+        <section class="education" id="education">
+            <h1 class="heading"><span>Experiences</span></h1>
+            <div class="row">
+
+                <div id="achievements" class="achievement-section"></div>
+                    <div class="achievement-box">
+                        <button onclick="toggleContent('academic')" class="btn" >Academic Achievements <i class="fas fa-graduation-cap"></i></button>
+                        <div id="academic" class="achievement-content" style="display: none;">
+                            <ul>
+                                <li>B.Sc.(Hons) in Software Engineering<br><p>University Of Kelaniya<br>Aug 2023 - Present<br> GPA - 3.68 (current)</p><br></li>
+                                <li>GCE A/L <br> <p>Maliyadeva Balika Vidyalaya, Kurunegala<br> A,B,C in Physical Stream <br> Aug 2019 </p><br></li>
+                                <li>Certificate Courses<br><p>
+                                    Cisco - Introduction to Cyber Security<br>Alison Courses<br>Coursera Courses<br>DevTown Courses<br>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="achievement-box" id="ac1">
+                    <button onclick="toggleContent('curriculum')" class="btn">Curriculum Activities <i class="fa-solid fa-award"></i></button>
+                        <div id="curriculum" class="achievement-content" style="display: none;">
+                            <ul>
+                                <li>Vice Secretary<br> <p>Software Engineering Students' Association,<br>University of Kelaniya<br>Aug 2022 - Aug 2023</p><br></li>
+                                <li>Volunteer<br><p>IEEE WIE Student Branch Affinity Group,<br> University of Kelaniya<br>Jul 2021 - Present</p><br></li> 
+                                <li>Student Member <br> <p>IEEE Sri Lanka Section<br>Apr 2023 - Present</p><br></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="achievement-box" id="ac2">
+                        <button onclick="toggleContent('skills')" class="btn">Technical Skills & Soft Skills <i class="fa-solid fa-laptop-code"></i></button>
+                            <div id="skills" class="achievement-content" style="display: none;">
+                                <ul>
+                                    <li>Technical Skills<br> <p> 
+                                        ▪ Java (OOP) <br>
+                                        ▪ HTML / CSS / JS <br>
+                                        ▪ PHP <br>
+                                        ▪ MySQL <br>
+                                        ▪ MongoDB (Beginer) <br>
+                                        ▪ ReactJs <br>
+                                        ▪ VCS (Git)</p><br></li>
+                                    <li>Soft Skills <br><p>
+                                        ▪ Hardworking and Dedication <br>
+                                        ▪ Designing <br>
+                                        ▪ Creativity <br>
+                                        ▪ Positive Thinking <br>
+                                        ▪ Adaptability <br>
+                                        ▪ Time Management <br>
+                                        ▪ Team Player <br>
+                                        ▪ Decision Making <br>
+                                    </p></li> 
+                                </ul>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--education section ends-->
+        
+
+
+        <!--contact section starts-->
+        <div class="section contact" id="contact">
+            <h1 class="heading"><span>Contact</span> Me<menu></menu></h1>
+            <div class="row">
+                <div class="content">
+                    <div class="info">
+                        <h3><i class="fas fa-envelope"></i>mguanuradha@gmail.com</h3>
+                        <h3><i class="fas fa-phone"></i>0773889025</h3>
+                        <h3><i class="fas fa-map-marker-alt"></i>Debaraliyadda Road, Pannala</h3>
+                </div>
+            </div>
+                
+        </div>
+        <!--contact section ends-->
+
+
+
+        jquery cdn link
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> 
+
+        <!--Custom js file link-->
+        <script src = "js/script.js"></script>
+
+    </body>
+</html>
