@@ -15,10 +15,10 @@ $(document).ready(function(){
 // JavaScript function to toggle academic and curriculum content visibility
 function toggleContent(contentId) {
     var content = document.getElementById(contentId);
-    if (content.style.display === 'none') {
-        content.style.display = 'block';
+    if (content.classList.contains('appear')) {
+        content.classList.remove('appear')
     }
     else {
-        content.style.display = 'none';
+        content.classList.add('appear');
     }
 }
