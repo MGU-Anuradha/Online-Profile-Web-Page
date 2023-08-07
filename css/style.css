@@ -1,10 +1,11 @@
 
 :root{
-    --Salmon:#E9967A;
+    --color1:rgb(73, 109, 181);
+    --color2: #0a0337;
 }
 
 *{
-    /* font-family: 'Helvetica', sans-serif;   */
+    /* font-family: 'Helvetica', sans-serif; */
     margin: 0; padding: 0;
     line-height: 1.5;
     box-sizing: border-box;
@@ -14,16 +15,16 @@
 } 
 
  *::selection{
-    background: var(--Salmon);
-    color: #333;  
+    background: var(--color1);
 } 
 
 
-/* -------------------------------- */
+
+/* -------------------------------------------------- */
 
 html{
-    font-size: 51%;/* font-size: 62.5% ;  */
-    overflow-x: hidden ;
+    font-size: 50%;
+    overflow-x: hidden ; 
 }
 
 html::-webkit-scrollbar{
@@ -31,20 +32,24 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-track{
-    background: #222;
+    box-shadow: inset 0 0 5px #222;
+    border-radius: 10px;
 }
 
 html::-webkit-scrollbar-thumb{
-    background: var(--Salmon);
+    background: #180a73;   
+    border-radius: 10px;
 }
 
 
-/* --------------------------------- */
+/* ------------------------------------------------ */
 
 body{
-    background: #000000;    
+    /* background: #000000f0;   */
+    background: linear-gradient(to bottom,  #af53e0,#391170, #7c1976);   
     overflow-x: hidden;
     padding-left: 35rem;
+    /* font-family: "Source Sans Pro", sans-serif;  */
 }
 
 section{
@@ -54,10 +59,11 @@ section{
 
 .btn{
     padding: .7rem 3rem;
-    background: #333;
+    background: var(--color2);
     color: #fff;
     cursor:pointer;
-    margin-top: 1rem;font-size: 2rem;
+    margin-top: 1rem;
+    font-size: 2rem;
     border-radius: 5rem;
 }
 
@@ -67,16 +73,18 @@ section{
 }
 
 .btn:hover{
-    background: var(--Salmon);
+    background: var(--color1);
 }
 
 .heading{
      /* text-align: center; */
      margin: 0 6rem;
      font-size: 4rem;
+     font-family: "sans-serif"; 
      padding: 1rem;
      border-bottom: .1rem solid #fff4; 
-     color: #b2564a; 
+     /* color: rgb(255, 255, 255); */
+     color: var(--color2);
 } 
 
 
@@ -86,8 +94,8 @@ header{
     z-index: 1000;
     height: 100%;
     width: 35rem;
-    background:#4F5054;
-    align-items: center;
+    /* background-color: #5a3494 ; */
+    background-color: #af53e0;   
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -95,20 +103,22 @@ header{
 }
 
 header .user img{
-    height: 17rem;
-    width: 17rem;
+    height: 25rem;
+    width: 25rem;
     border-radius: 50%; 
     object-fit: cover;
     margin-bottom: 1rem;
+    box-shadow: 0 4px 6px rgba(129, 13, 15, 0.979);
 }
 
 header .user .name{
-    font-size: 3.5rem;
-    color: #fff;
+    font-size: 3rem;
+    /* color: #fff; */
+    color: var(--color2);
 }
 
 header .user .post{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #eee;
 }
 
@@ -121,20 +131,20 @@ header .navbar ul li a{
     display: block;
     padding: 1rem;
     margin: 1.5rem 0;
-    background: #333;
+    background: var(--color2);
     color: #fff;
     font-size: 2rem;
     border-radius: 5rem  ;
 }
 
 header .navbar ul li a:hover{
-    background: var(--Salmon);
+    background: var(--color1);
 }
 
 #menu{
     position: fixed;
     top: 2rem; right: 2rem;
-    background: #333;
+    background: var(--color2);
     color: #fff;
     cursor: pointer;
     font-size: 2.5rem;
@@ -154,21 +164,39 @@ header .navbar ul li a:hover{
 
 .home h3{
     font-size: 3rem;
-    color: #fff;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .home h1{
     font-size:5rem;
-    color: #fff;
 }
 
 .home h1 span{
-    color: var(--Salmon);
+    color: var(--color2);
 }
+
+.home .wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
 
 .home p{
     font-size:2rem;
-    color: #eee;
     padding: 1rem 0;
 }
 
@@ -185,6 +213,10 @@ header .navbar ul li a:hover{
     padding: 1rem 0;
 }
 
+.about .heading span{
+    color: #0a0337;
+}
+
 .about .row .info{
     flex: 1 1 48rem;
     padding: 2rem 1rem;
@@ -193,22 +225,35 @@ header .navbar ul li a:hover{
 
 .about .row .info h3{
     font-size:2rem;
-    color: var(--Salmon);
     padding: 1rem 0 ;
     font-weight: normal;
 }
 
 .about .row .info h3 span{
-    color: #eee;
+    /* color: #eee;  */
     padding: 0 .5rem;
 } 
 
 .about .row .info p{
     font-size:2rem;
-    color: #eee;
     padding: 1rem 0;
+    /* color: white; */
 }
+/* .about .row .info .download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--color2);
+    color: #fff;
+    cursor:pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+  }
 
+  .about .row .info .download-button:hover{
+    background: var(--color1);
+} */
+  
 .about .row .counter{
     flex: 1 1 48rem;
     display:flex ;
@@ -218,7 +263,7 @@ header .navbar ul li a:hover{
 
 .about .row .counter .box{
     width: 20rem;
-    background: #222;
+    background: var(--color2);
     text-align: center;
     padding: 2rem;
     margin: 2rem; 
@@ -226,7 +271,7 @@ header .navbar ul li a:hover{
 .about .row .counter .box .media-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: rgba(19, 19, 100, 0.337);
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -236,7 +281,7 @@ header .navbar ul li a:hover{
   }
   
   .about .row .counter .box .media-button:hover {
-    background-color: #555;
+    background-color: var(--color1);
   }
 
 
@@ -273,7 +318,7 @@ header .navbar ul li a:hover{
     /* display: none; */
     margin-bottom: 5px;
     font-size:15px;
-    background-color:#333;
+    background-color:var(--color2);
     /* border-color:rgb(61, 61, 15);  */
     border-radius: 50px;
     padding:15px;
@@ -284,13 +329,13 @@ header .navbar ul li a:hover{
     
 }
 
-.achievement-content{
+/* .achievement-content{
     font-size:15px;
     font-weight:800;
     opacity: 0;
     height: 0;
     transition: opacity 1s linear, height 1s linear;
-}
+} */
 .achievement-box ul{
     line-height:1.6;
 }
@@ -298,12 +343,32 @@ header .navbar ul li a:hover{
     font-weight: 300;
 }
 
-.appear{
+/* .appear{
     opacity: 1;
     height: 600px;
     transition: opacity 1s linear, height 1s linear;
 
-}
+} */
+
+
+.achievement-box.active .achievement-content {
+    font-size: 15px;
+    font-weight: 800;
+    opacity: 1;
+    max-height: 600px;
+    transition: opacity 1s linear, max-height 1s linear;
+    overflow: hidden;
+  }
+  
+  .achievement-box .achievement-content {
+    font-size: 15px;
+    font-weight: 800;
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 1s linear, max-height 1s linear;
+    overflow: hidden;
+  }
+  
 
 
 
@@ -325,17 +390,41 @@ header .navbar ul li a:hover{
     display: flex; 
     align-items: center;
     font-size: 2rem;
-    color: #eee;
+    color: black;
     padding: 1rem 0;
     font-weight: normal;
 } 
 
 .contact .row .content .info h3 i{
     padding-right: 3rem;
-    color: var(--Salmon);
+    color: var(--color2);
+}
+.contact .row .content .info h3 i{
+    padding-right: 3rem;
+    color: var(--color2);
+}
+.contact .row .content .info .link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 
+/*------------------------------*/
+
+footer {
+    background-color:var(--color2);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 15px;
+  }
+  
+  
 
 
 
