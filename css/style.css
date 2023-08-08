@@ -45,7 +45,8 @@ html::-webkit-scrollbar-thumb{
 /* --------------------------------------------------- */
 
 body{
-    background: linear-gradient(to bottom,  #af53e0,#391170, #7c1976);   
+    /* background: linear-gradient(to bottom,  #af53e0,#391170, #7c1976);    */
+    background: linear-gradient(to bottom,  #A0A6BE,#C481A7, #E85C90); 
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -90,7 +91,7 @@ header{
     z-index: 1000;
     height: 100%;
     width: 35rem;
-    background-color: #af53e0;   
+    background-color: #714674;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -103,7 +104,7 @@ header .user img{
     border-radius: 50%; 
     object-fit: cover;
     margin-bottom: 1rem;
-    box-shadow: 0 4px 6px rgba(129, 13, 15, 0.979);
+    box-shadow: 0 4px 6px rgba(129, 13, 90, 0.979);
 }
 
 header .user .name{
@@ -360,7 +361,7 @@ header .navbar ul li a:hover{
 /* --------------------------------------------------- */
 
 footer {
-    background-color:var(--color2);
+    background-color:#000000;
     color: white;
     padding: 20px;
     text-align: center;
